@@ -1,0 +1,22 @@
+{
+  "name": "project",
+  "description": "This is a sample project.",
+  "main": "index.html",
+  "authors": [
+    "George Simos"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/georgesimos/sassy",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bourbon": "^4.3.4",
+    "susy": "^3.0.1",
+    "normalize-css": "^7.0.0"
+  }
+}
