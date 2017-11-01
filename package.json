@@ -1,0 +1,19 @@
+{
+  "name": "project",
+  "version": "0.0.1",
+  "description": "This is a sample project.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgesimos/sassy.git"
+  },
+  "author": "George Simos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgesimos/sassy/issues"
+  },
+  "homepage": "https://github.com/georgesimos/sassy#readme"
+}
