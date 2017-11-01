@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/georgesimos/sassy/issues"
   },
-  "homepage": "https://github.com/georgesimos/sassy#readme"
+  "homepage": "https://github.com/georgesimos/sassy#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  }
 }
