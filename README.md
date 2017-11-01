@@ -41,3 +41,5 @@ The WorkFlow...
 
 11. Install JQuery "npm install jquery --save" // if you want
 12. Install Grunt Contrib Uglify "npm install grunt-contrib-uglify --save-dev"
+
+Use "grunt" on terminal 
