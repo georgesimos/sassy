@@ -57,7 +57,7 @@ module.exports = function(grunt) {
     my_target: {
 
       files: {
-        'js/scripts.js' : ['assets/js/scripts.js', 'node_modules/jquery/dist/jquery.js']
+        'js/scripts.js' : ['node_modules/jquery/dist/jquery.js', 'assets/js/scripts.js']
       }
     }
   }
