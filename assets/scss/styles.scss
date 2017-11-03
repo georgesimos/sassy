@@ -1,0 +1,32 @@
+/*!
+
+ =========================================================
+ * Extend Task 
+ =========================================================
+
+ * GitHub Page: https://github.com/georgesimos/sassy
+
+ =========================================================
+*/
+
+// Reset/normalize 
+@import 'bower_components/normalize-css/normalize';
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display|Raleway');
+
+// Variables
+@import 'partials/variables';
+
+// Partials
+/* Base and Layout */
+@import 'partials/base';
+@import 'partials/layout';
+/* Modules */
+@import 'partials/modules';
+/* Header */
+@import 'partials/header';
+/* Footer */
+@import 'partials/footer';
+
+

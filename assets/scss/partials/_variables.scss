@@ -1,0 +1,26 @@
+// Color palette 
+$black : rgba( 34, 31, 31, 1);
+$white : rgba( 243, 243, 243, 1);
+$gold : rgba( 178, 167, 140, 1);
+$gold-h2 : rgba( 81, 81, 67, 1);
+$gray : rgba( 250, 244, 243, 1);
+$gray-dark : rgba( 204, 204, 204, 1);
+$blue : rgba( 0, 51, 81, 1);
+$gray-op : rgba( 250, 244, 243, .7);
+$gray-op2 : rgba(255, 255, 255, 0.899);
+
+/* fonts */
+@font-face {
+    font-family: PFBagueSansPro;
+    src: url(../fonts/PFBagueSansPro-Medium.otf);
+}
+$medium-font: 'PFBagueSansPro', serif;
+$serif: 'Playfair Display', serif;
+$sans-serif: 'Raleway', sans-serif;
+
+$default-border-radius: 20px;
+
+// Responsive
+$phone-tablet:"(max-width:991px)";
+
+$desktop: "(min-width: 992px)";

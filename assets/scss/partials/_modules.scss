@@ -1,0 +1,236 @@
+.tablet-mobile{
+  display: none;
+}
+// Carousel Master
+.master {
+  .carousel-caption {
+    top: 40%;
+    text-align: justify;
+    h2{
+        color: $gold;
+    }
+}
+  .carousel-indicators {
+    position: absolute;
+    display: grid;
+    left: 93%;
+    z-index: 15;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: center;
+    list-style: none;
+
+    li {
+      display: inline-block;
+      width:  10px;
+      height: 10px;
+      margin: 1px;
+      text-indent: -999px;
+      border: 1px solid $gray-dark;
+      border-radius: 10px;
+      cursor: pointer;
+      background-color: $gray-dark;
+    }
+    .active {
+      margin: 0;
+      width:  12px;
+      height: 12px;
+      background-color: $gold;
+    }
+  }
+}
+
+  .carousel-control-next, .carousel-control-prev {
+      color: $black;
+      i {
+          font-size: 2.4em;
+
+          &:hover, &:focus {
+              color: $gold;
+          }
+      }
+      &:hover, &:focus {
+        color: $gold;
+    }
+  }
+
+  // Second Carousel
+  .carousel-bg{
+    background: $white;
+    padding: 5% 0;
+  }
+  .slide-blog {
+    .title{
+      h2{
+        font-size: 21px;
+        color: #b2a78c;
+        padding-bottom: 10px;
+      }
+    }
+    .carousel-indicators {
+      position: absolute;
+      display: inline-table;
+      left: 50%;
+      top: 100%;
+      z-index: 15;
+      padding-left: 0;
+      margin-left: 0;
+      text-align: center;
+      list-style: none;
+    
+      li {
+        display: inline-block;
+        width:  10px;
+        height: 10px;
+        margin: 1px;
+        text-indent: -999px;
+        border: 1px solid $gray-dark;
+        border-radius: 10px;
+        cursor: pointer;
+        background-color: $gray-dark;
+      }
+      .active {
+        margin: 0;
+        width:  12px;
+        height: 12px;
+        background-color: $gold;
+      }
+    }
+  }
+
+  // Divider
+  hr.divider{
+    border-top: 1px solid $gold;
+    margin: 0;
+}
+// Masonry with relative/absolute
+.masonry {
+    position: relative;
+    margin-top: 60px;
+    height: 700px;
+
+    .masonry-item:nth-child(1){
+        position: absolute;
+        left: 0px;
+        top: 0px;
+    }
+    .masonry-item:nth-child(2){
+        position: absolute;
+        left: 0px;
+        top: 319px;
+    }
+    .masonry-item:nth-child(3){
+        position: absolute;
+        left: 330px;
+        top: 319px;
+    }
+    .masonry-item:nth-child(4){
+        position: absolute;
+        left: 700px;
+        top: 0;
+    }
+}
+@media #{$phone-tablet} {
+  .jumbotron {
+    background-image: url("../img/slider1.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+  .tablet-mobile{
+    display: block;
+    h2{
+      color: $gold;
+  }
+  }
+  .container.masonry {
+    max-width: 100%;
+    margin: 5% 0;
+    height: 100%;
+    .masonry-item {
+      padding: 5px;
+      img {
+        width: 100%;
+      }
+      &:nth-child(1){
+        position: unset;
+    }
+    &:nth-child(2),
+    &:nth-child(3){
+      position: unset;
+      width: 50%;
+      float: left;
+    }
+    &:nth-child(3)::after{
+      clear: both;
+    }
+    &:nth-child(4){
+      display: none;
+    }
+    }
+  }
+  #CarouselSlider{
+    clear: both;
+  }
+  .slide-blog,
+  #MainCarousel{
+    display: none;
+  }
+}
+
+// CarouselSlides
+#carouselSlides {
+  .container {
+    position: relative;
+  }
+  padding: 10% 0;
+  .carousel-indicators {
+    right: 5%;
+    margin: 0;
+    left: unset;
+    li {
+      width: 15px;
+      height: 15px;
+
+    }
+  }
+}
+
+// Banners
+.bg-image {
+    background: #222 url(../img/bgg.jpg) no-repeat center center / cover;
+    margin: 20px 0;
+    padding: 100px 0;
+    .col-md-7{
+      background-color: $gray-op;
+      padding: 40px;
+    }
+    .btn {
+      background-color: $gray-op2;
+      border-color: $black;
+      border-radius: 0;
+    }
+}
+.bg-image-newsletter{
+  background: #222 url(../img/bgnews.jpg) no-repeat center center / cover;
+  height: 50vh;
+}
+
+// Contact Form 
+#contact {
+  padding: 5% 0;
+  .text-left {
+    font-size: 21px;
+    color: $gold;
+  }
+  .form-control{
+    border-color: $black;
+    border-radius: 0;
+  }
+  .btn {
+    border-radius: 0;
+    width: 200px;
+  }
+  .btn-dark {
+    background-color: $black;
+  }
+}
