@@ -11,16 +11,17 @@ $gray-op2 : rgba(255, 255, 255, 0.899);
 
 /* fonts */
 @font-face {
-    font-family: PFBagueSansPro;
+    font-family: MediumFont;
     src: url(../fonts/PFBagueSansPro-Medium.otf);
 }
-$medium-font: 'PFBagueSansPro', serif;
+$medium-font: 'MediumFont', serif;
 $serif: 'Playfair Display', serif;
 $sans-serif: 'Raleway', sans-serif;
 
 $default-border-radius: 20px;
 
 // Responsive
+$small-phones:"(max-width:390px)";
 $phone-tablet:"(max-width:991px)";
 
 $desktop: "(min-width: 992px)";

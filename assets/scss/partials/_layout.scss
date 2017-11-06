@@ -1,3 +1,22 @@
 .container {
-    padding: 0;
+    padding: 0 15px;
 }
+.center {
+    margin: 5% auto;
+}
+.content-text {
+    margin: auto;
+    margin-bottom: 15px;
+}
+.content-text-left {
+    margin: 15px 0;
+    h2{
+        font-size: 15px;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+}
+.gray-bg {
+    background: $white;
+}
+

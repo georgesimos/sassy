@@ -8,6 +8,11 @@
         font-size: 0;
     }
 }
+.top-bar-social {
+    i {
+        font-size: 20px;
+    }
+}
 .top-bar-left,
 .footer-bar-left {
     float: left;
@@ -64,9 +69,11 @@
       }
   }
   .navbar-nav {
+      margin: auto;
       li{
           a{
               color: $black;
+              font-size: 15px;
           }
           &:last-of-type {
             padding: 7px 50px;

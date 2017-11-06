@@ -129,6 +129,29 @@
         left: 700px;
         top: 0;
     }
+    .masonry-content {
+      position: relative;
+      .masonry-text {
+        background: $gray-op2;
+        position: absolute;
+        bottom: 15px;
+        margin: 10px;
+        padding: 20px;
+        .title {
+          color: $gold;
+        }
+      }
+    }
+}
+@media #{$small-phones} {
+  .masonry-text {
+    .title {
+      font-size: 13px;
+    }
+    .text {
+      display: none;
+    }
+  }
 }
 @media #{$phone-tablet} {
   .jumbotron {
@@ -192,8 +215,23 @@
       height: 15px;
 
     }
+    }
+    .carousel-text {
+      position: absolute;
+      left: 5%;
+      background: white;
+      bottom: 10%;
+      padding: 30px;
+      h2 {
+        color: $gold;
+        font-size: 24px;
+      }
+      p {
+       font-size: 20px;
+      }
   }
 }
+
 
 // Banners
 .bg-image {
@@ -216,7 +254,7 @@
 }
 
 // Contact Form 
-#contact {
+#contact, #contact-single {
   padding: 5% 0;
   .text-left {
     font-size: 21px;
@@ -233,4 +271,100 @@
   .btn-dark {
     background-color: $black;
   }
+}
+
+
+// Accordion
+.accordion {
+  margin-top: 5%;
+}
+.accortion-title {
+  &::after{
+    display: inline-block;
+    height: 4px;
+    position: relative;
+    top: -16px;
+    content: " ";
+    text-shadow: none;
+    background-color: $black;
+    width: 140px;
+  }
+}
+#Accordion {
+  .item {
+    a {
+      color: $black;
+
+      &:after {
+        content: "\f105";
+        font-family: FontAwesome;
+        float: right;
+      }
+    }
+    h4 {
+      font-size: 17px;
+    }
+    ul{
+      li{
+        list-style: none;
+        font-size: 12px;
+      }
+    }
+  }
+}
+div.accordion-bg {
+  background-color: $white;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.share-social {
+  h4 {
+    font-size: 16px;
+    position: absolute;
+    left: -70px;
+    top: 5px;
+  }
+  .btn {
+    padding: 0 .8rem;
+    margin: 0 3px;
+  }
+}
+
+// Card Categories
+
+.categories {
+  .card {
+    float: left;
+    width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+}
+.card-image {
+  position: relative;
+  width: 300px;
+  img {
+  width: 300px;
+  }
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $white;
+
+  &:hover {
+    opacity: 1;
+  }
+  .text {
+    padding: 10% 5%;
+  }
+}
 }
