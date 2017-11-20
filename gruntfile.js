@@ -21,6 +21,23 @@ module.exports = function(grunt) {
     }
   },
 
+
+  /*
+    AutoPrefixer
+    */
+
+  autoprefixer: {
+    options: {
+      browser: ['last 2 versions']
+    },
+    multiple_files: {
+      expand: true,
+      flatten: true,
+      src: 'css/styles.css',
+      dest: 'css/new-styles.css'
+    }
+  },
+
   /*
     Grunt Contrib Watch
     Monitor files and excute tasks
@@ -31,10 +48,10 @@ module.exports = function(grunt) {
     sass: {
 
       files: [
-        'assets/scss/*.scss'
+        'assets/scss/**/*.scss'
       ],
       tasks: [
-        'sass'
+        'sass', 'autoprefixer'
       ]
     },
     scripts: {
